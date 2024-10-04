@@ -1,0 +1,26 @@
+.fontSize{
+font-size: 1.2rem;
+}
+.textDanger{
+    color: red;
+}
+.textSuccess{
+    color:green;
+    font-size:'2rem'
+}
+.textSpecial{
+    font-style: italic;
+    color: green;
+}
+.h2{
+color: pink;
+}
+.saved{
+    font-size: 30px;
+}
+.modified{
+background-color: yellow;
+}
+.special{
+    font-style: italic;
+}

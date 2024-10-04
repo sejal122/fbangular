@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- <h1>Welcome {{name}} !</h1>
+<input placeholder="Search" [value]="searchText"  (input)="updateSearch($event)"><br><br>
+<input placeholder="Search" [(ngModel)]="search" ><br><br>
+<input placeholder="Name" #name ><br><br>
+<button (click)="refVarExample(name)">Get name input</button>>
+<h5>ref variable input value:{{name.value}}</h5>
+<p>You searched for :  <strong>{{searchText}}</strong></p>
+<p>ngModel search : {{search}}</p>
+<img [src]="imagesrc"><br>
+<button (click)="decrementCart()" >-</button>
+{{cart}}
+<button (click)="incrementCart()">+</button>
+
+<ng-template  *ngIf="show" #mytemplate >
+  <h1>Hello from ng template</h1>
+  <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, rem recusandae! Aspernatur ipsam incidunt eum obcaecati. Inventore quod veniam eaque ratione dolorum alias deserunt iure ducimus iusto laborum, quaerat consectetur!</p></div>
+</ng-template>
+
+<button *ngIf="search != '' ">show button</button>
+
+
+<h2 *ngIf="cart===0 ">Cart is empty</h2>
+
+<div *ngIf="isLoggedIn; else loggedOut">
+  welcome back!
+</div>
+
+<ng-template #loggedOut>
+  please login
+</ng-template>
+
+<div>
+  <ul>
+    <li *ngFor="let user of users;let i=index">
+      {{i+1}} . {{user.name}}
+    </li>
+  </ul>
+</div>
+
+@for (user of users;track $index){
+  <li>{{$index+1}}  {{user.name}}</li>
+}
+<h1>{{day}}</h1>
+<div [ngSwitch]="day">
+  <h1 *ngSwitchCase="0"> today is sunday </h1>
+  <h1 *ngSwitchCase="1"> today is monday</h1>
+  <h1 *ngSwitchCase="2"> have a productive tuesday </h1>
+  <h1 *ngSwitchCase="3"> have a productive wednesday </h1>
+  <h1 *ngSwitchCase="4"> its  thursday ! u are almost done </h1>
+  <h1 *ngSwitchCase="'saturday'"> relax its saturday </h1>
+  <h1 *ngSwitchCase="'sunday'"> have a pleasant sunday </h1>
+  <p *ngSwitchDefault> Invalid day</p>
+</div>
+
+<div [ngStyle]="myStyles"> Welcome!</div>
+
+<h2 [ngClass]="ngcexample" >Ng class example</h2>
+
+<p [ngClass]="myClass"> this div is : modified / special /saved </p>
+
+<h1>{{pipeName | lowercase }}</h1><br/>
+<h1> {{ pipeName | slice: 3}}</h1><br/>
+<h1>{{day |date:'shortTime'}}</h1><br/>
+<h1>{{pipeNumber | percent:'4.3-5'}}</h1><br>
+<h1>{{pipeNumber|currency:'INR'}}</h1>
+
+<h1>{{searchText|reversestring}}</h1><br/>
+<h1>{{266|multiplier:'4.66'}}</h1>
+{{message}} -->
+<!-- <h1 appSetbg>App file directive</h1>
+<app-parentcomp> </app-parentcomp>
+
+<nav>
+  <ul>
+    <a  routerLink="/home">Home</a>
+    <li > <a routerLink="/contact-us">Contact us</a></li>
+    <li><a routerLink="/Login">Login</a></li>
+  </ul>
+</nav> -->
+
+<router-outlet></router-outlet>
+<app-home></app-home>
+<!-- <app-filterexample></app-filterexample> -->
+<!-- <app-login></app-login> -->
+<!-- <app-templatedrivenforms></app-templatedrivenforms>
+<app-reactiveforms></app-reactiveforms> -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<h1>Reactive forms</h1>
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+  <div>
+    <label>First name</label>
+    <input type="text" formControlName="firstname" required/>
+  </div>
+  <div>
+    <label>Last name</label>
+    <input type="text" formControlName="lastname" />
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+  </div>
+  <div>
+    <label>Gender</label>
+    <input type="radio" value="Male" formControlName="gender" />Male
+    <input type="radio" value="Female" formControlName="gender" />Female
+  </div>
+  <button type="submit">Login</button>
+</form>
